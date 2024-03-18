@@ -65,13 +65,6 @@ endmodule
 ![image](https://github.com/Hemasonica774/BOOLEAN_FUNCTION_MINIMIZATION/assets/118361409/1460901b-db8a-4585-8416-20f330957179)
 
 
-**Timetable**
-
-![image](https://github.com/Hemasonica774/BOOLEAN_FUNCTION_MINIMIZATION/assets/118361409/dba7a035-8cac-4c2f-bce3-6dd8297d91ad)
-
-**Timing Diagram**
-
-![image](https://github.com/Hemasonica774/BOOLEAN_FUNCTION_MINIMIZATION/assets/118361409/8d167ed3-baa3-478d-98c0-13e5baf78d0c)
 
 **Result:**
 
