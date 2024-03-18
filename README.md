@@ -39,31 +39,30 @@ Developed by:P.Hemasonica
 
 RegisterNumber:212222230048
 ```
-module boolean_fun(a,b,c,d,w,x,y,z,f1,f2);
-input a,b,c,d,w,x,y,z;
-output f1,f2;
-wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u,v,w1,w2,x1,x2,y1,y2,z1,z2;
-not(adash,a);
-not(bdash,b);
-not(cdash,c);
-not(ddash,d);
-not(ydash,y);
-and(p,bdash,ddash);
-and(q,adash,b,d);
-and(r,a,b,cdash);
-or(f1,p,q,r);
-
-and(w1,a,b,c);
-and(w2,~a,~b,~c);
-or(f2,w1,w2);
+module exp22(A,B,C,D,F1);
+input A,B,C,D;
+output F1;
+wire x1,x2,x3,x4,x5;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign F1=x1|x2|x3|x4|x5;
 endmodule
+
 ```
 **RTL realization**
 
-![image](https://github.com/Hemasonica774/BOOLEAN_FUNCTION_MINIMIZATION/assets/118361409/3996d6f4-43d5-4fcd-a370-e0ab928099b5)
+![image](https://github.com/Hemasonica774/BOOLEAN_FUNCTION_MINIMIZATION/assets/118361409/ed911319-3d25-4ad8-be85-1145b1fd0f8f)
 
-![image](https://github.com/Hemasonica774/BOOLEAN_FUNCTION_MINIMIZATION/assets/118361409/1460901b-db8a-4585-8416-20f330957179)
+**Truth table**
 
+![image](https://github.com/Hemasonica774/BOOLEAN_FUNCTION_MINIMIZATION/assets/118361409/af782e45-7db6-4eb4-8db6-d8f3b73b310c)
+
+**Timing Diagram**
+
+![image](https://github.com/Hemasonica774/BOOLEAN_FUNCTION_MINIMIZATION/assets/118361409/22cb916b-719e-407f-a1af-9768d661857b)
 
 
 **Result:**
